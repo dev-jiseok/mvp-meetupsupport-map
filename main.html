@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>회사 위치 지도</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      .info-window {
+        padding: 12px;
+        max-width: 300px;
+      }
+      .info-window h3 {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+      }
+      .info-window p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      let map;
+      let infoWindow;
+      let geocoder;
+
+      async function initMap() {
+        const { Map } = await google.maps.importLibrary("maps");
+        const { InfoWindow } = await google.maps.importLibrary("maps");
+        const { Geocoder } = await google.maps.importLibrary("geocoding");
+        
+        map = new Map(document.getElementById("map"), {
+          center: { lat: 35, lng: 135 },
+          zoom: 2.5,
+        });
+        
+        infoWindow = new InfoWindow();
+        geocoder = new Geocoder();
+
+        try {
+          const response = await fetch('locations.json');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const locationData = await response.json();
+
+          for (const feature of locationData.features) {
+            if (feature.geometry && feature.geometry.coordinates) {
+              createMarker({
+                lat: feature.geometry.coordinates[1],
+                lng: feature.geometry.coordinates[0]
+              }, feature.properties);
+            } else if (feature.properties.address) {
+              await geocodeAndCreateMarker(feature.properties);
+            }
+          }
+        } catch (error) {
+          console.error('데이터 로딩 에러:', error);
+        }
+      }
+
+      async function geocodeAndCreateMarker(properties) {
+        try {
+          const response = await geocoder.geocode({ address: properties.address });
+          if (response.results.length > 0) {
+            const location = response.results[0].geometry.location;
+            createMarker(location, properties);
+          }
+        } catch (error) {
+          console.error('Geocoding error:', error);
+        }
+      }
+
+      function getMarkerUrl(type) {
+        // 마커 색상에 따른 URL 반환
+        switch(type.toLowerCase()) {
+          case 'reactor':
+            return 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png';
+          case 'office':
+            return 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+          case 'thirdparty':
+            return 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+          default:
+            return 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+        }
+      }
+
+      function createMarker(position, properties) {
+        const markerUrl = getMarkerUrl(properties.type);
+        
+        const marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          title: properties.title,
+          icon: markerUrl
+        });
+
+        marker.addListener("click", () => {
+          const content = `
+            <div class="info-window">
+              <h3>${properties.title}</h3>
+              ${properties.address ? `<p><strong>주소:</strong> ${properties.address}</p>` : ''}
+              ${properties.description ? `<p><strong>설명:</strong> ${properties.description}</p>` : ''}
+              ${properties.contact ? `<p><strong>연락처:</strong> ${properties.contact}</p>` : ''}
+            </div>
+          `;
+          
+          infoWindow.setContent(content);
+          infoWindow.open(map, marker);
+        });
+      }
+
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "AIzaSyAHO-DVO4rmST_NJUnlJRu3y4Hn2i6vRvE", 
+        v: "beta",
+        language: "en"  // 언어를 영어로 설정
+      });
+
+      initMap();
+    </script>
+  </body>
+</html>

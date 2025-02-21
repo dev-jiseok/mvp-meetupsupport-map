@@ -1,0 +1,307 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor London",
+        "address": "2 Kingdom Street, Paddington, London, W2 6BD UK",
+        "country": "UK",
+        "description": "Microsoft Reactor London",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Bengaluru",
+        "address": "Vigyan 1st floor, 9, Lavelle Road, Ashok Nagar, Bengaluru, 560001 India",
+        "country": "India",
+        "description": "Microsoft Reactor Bengaluru",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Ferns",
+        "address": "6, 18, Bellandur Gate Rd, Bellandur, Bengaluru, India",
+        "country": "India",
+        "description": "Microsoft Ferns Office",
+        "capacity": 300,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Vigyan",
+        "address": "Vigyan 1st floor, 9, Lavelle Road, Ashok Nagar, Bengaluru, India",
+        "country": "India",
+        "description": "Microsoft Vigyan Office",
+        "capacity": 180,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Luxor",
+        "address": "Microsoft India (R&D) Private Limited., Luxor North Tower, 8th Floor Survey No 68, 69/1, 69/2 & 69/3, Bagmane Capital, Ashyara Layout, Bengaluru, India",
+        "country": "India",
+        "description": "Microsoft Luxor Office",
+        "capacity": 250,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Sovereign",
+        "address": "FC-12, Maharaja Agrasen Marg, Film City, Sector 16A, Noida, India",
+        "country": "India",
+        "description": "Microsoft Sovereign Office",
+        "capacity": 120,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft KP Tower",
+        "address": "KP towers, Sector 16B, Noida, India",
+        "country": "India",
+        "description": "Microsoft KP Tower Office",
+        "capacity": 80,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Gurgaon",
+        "address": "8th floor, Building B Commercial Site, DLF Down Town, Block 5, DLF City Phase 3 Rd, Ambience Island, Sector 25 A, Sector 24, Gurugram, India",
+        "country": "India",
+        "description": "Microsoft Gurgaon Office",
+        "capacity": 300,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Chennai",
+        "address": "471, 2nd Floor, Prestige Polygon, Anna Salai, Rathna Nagar, Teynampet, Chennai, Chennai",
+        "country": "India",
+        "description": "Microsoft Chennai Office",
+        "capacity": 60,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Mumbai",
+        "address": "Windsor, 4th Floor, off Central Salsette Tramway Road, Kalina, Santacruz East, Mumbai, India",
+        "country": "India",
+        "description": "Microsoft Mumbai Office",
+        "capacity": 60,
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor New York",
+        "address": "640 8th Ave, New York, 10036 USA",
+        "country": "USA",
+        "description": "Microsoft Reactor New York",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Redmond",
+        "address": "3709 157th Ave NE, Redmond, 98052 USA",
+        "country": "USA",
+        "description": "Microsoft Reactor Redmond",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor San Francisco",
+        "address": "555 California St, San Francisco, 94104 USA",
+        "country": "USA",
+        "description": "Microsoft Reactor San Francisco",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Sao Paulo",
+        "address": "Rua Jaceru, nº 225, Vila Gertrudes, São Paulo, 04705-000 Brazil",
+        "country": "Brazil",
+        "description": "Microsoft Reactor Sao Paulo",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Shanghai",
+        "address": "1st Floor, Block J, Tianlin Road, Xuhui District, Shanghai, China",
+        "country": "China",
+        "description": "Microsoft Reactor Shanghai",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Sydney",
+        "address": "Level 10, 11-31 York Street, Sydney, 2000 Australia",
+        "country": "Australia",
+        "description": "Microsoft Reactor Sydney",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Tel Aviv",
+        "address": "Derech Menachem Begin 144, \"Midtown\" Floor 50, Tel Aviv-Yafo, Israel",
+        "country": "Israel",
+        "description": "Microsoft Reactor Tel Aviv",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Reactor Toronto",
+        "address": "CIBC Square: 81 Bay St, Toronto, M5J0E7 Canada",
+        "country": "Canada",
+        "description": "Microsoft Reactor Toronto",
+        "type": "Reactor"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Japan Tokyo",
+        "address": "Shinagawa Grand Central Tower, 2-16-3 Konan, Minato-ku, Japan",
+        "country": "Japan",
+        "description": "Microsoft Japan Tokyo Office",
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Modulabs",
+        "address": "서울특별시 강남구 강남대로 324",
+        "country": "Korea",
+        "description": "Modulabs - 모두의 연구소 강남",
+        "type": "thirdparty"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Seoul ai hub",
+        "address": "서울특별시 서초구 양재동 126",
+        "country": "Korea",
+        "description": "서울 양재 ai hub",
+        "type": "thirdparty"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft korea Seoul",
+        "address": "서울특별시 종로구 중학동 종로1길 50",
+        "country": "Korea",
+        "description": "Microsoft korea Seoul Office",
+        "type": "Office"
+      }
+    },
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Spain, Madrid office",
+        "address": "P.º Club Deportivo, 1, edificio 1, 28223 Pozuelo de Alarcón, Madrid, 스페인",
+        "country": "Spain",
+        "description": "Microsoft Spain, Madrid office",
+        "type": "Office"
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft UK, London office ",
+        "address": "2 Kingdom St, London W2 6BD 영국",
+        "country": "UK",
+        "description": "Microsoft UK, London office",
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft US, New York office",
+        "address": "11 Times Sq, New York, NY 10036 미국",
+        "country": "UK",
+        "description": "Microsoft US, New York office",
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft German, Munich office ",
+        "address": "Walter-Gropius-Straße 5, 80807 München, 독일",
+        "country": "German",
+        "description": "Microsoft German, Munich office ",
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Denmark office",
+        "address": "Kanalvej 7, 2800 Kongens Lyngby, 덴마크",
+        "country": "Denmark",
+        "description": "Microsoft Denmark office",
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Dubai office",
+        "address": "35V6+XVW DIC Building @8 - Building No 8 Sheikh Zayed Rd - Al Sufouh - Dubai Internet City - Dubai - 아랍에미리트",
+        "country": "Dubai",
+        "description": "Microsoft Dubai office",
+        "type": "Office"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Microsoft Beijing office",
+        "address": "5 Dan Ling Jie, Zhongguancun, Hai Dian Qu, Bei Jing Shi, 중국 100086",
+        "country": "China",
+        "description": "Microsoft Beijing office",
+        "type": "Office"
+      }
+    }
+  ]
+}
