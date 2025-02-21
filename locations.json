@@ -4,16 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Microsoft Reactor London",
-        "address": "2 Kingdom Street, Paddington, London, W2 6BD UK",
-        "country": "UK",
-        "description": "Microsoft Reactor London",
-        "type": "Reactor"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "title": "Microsoft Reactor Bengaluru",
         "address": "Vigyan 1st floor, 9, Lavelle Road, Ashok Nagar, Bengaluru, 560001 India",
         "country": "India",
